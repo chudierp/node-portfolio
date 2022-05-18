@@ -1,3 +1,65 @@
 body {
     background-color: rgb(74, 74, 197);
+    font-family: 'Roboto', sans-serif;
 }
+
+container {
+    width: 1170px;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(111, 157, 255);
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 150px;
+    color: black;
+}
+
+.userPic {
+    height: 100%;
+    width: auto;
+}
+
+.userDetails {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    flex-grow: 2;
+}
+
+.userDetails h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+.home {
+    background-color: blue;
+}
+
+.projects {
+    background-color: aquamarine;
+}
+
+.contact {
+    background-color: bisque;
+}
+
+.home, .projects, .contact {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.home ion-icon,
+.projects ion-icon,
+.contact ion-icon {
+    font-size: 100px;
+}
+

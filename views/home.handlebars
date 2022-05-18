@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <h3>welcome {{name}}</h3>    
-
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                
+                <img class="userPic" src="/images/laptop wave.png" alt="profile picture">
+                
+                <div class="userDetails">
+                    <h1>{{name}} codes</h1>
+                    <span>Software Engineer</span>
+                </div>
+                <div class="home">
+                    <ion-icon name="school-outline"></ion-icon>
+                </div>
+                <div class="projects">
+                    <ion-icon name="folder-outline"></ion-icon>
+                </div>
+                <div class="contact">
+                    <ion-icon name="mail-unread-outline"></ion-icon>
+                </div>
+            </nav>
+        </div>
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>
