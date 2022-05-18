@@ -1,8 +1,23 @@
+const path = require('path')
 const express = require('express')
+const { engine } = require('express-handlebars')
+
 const app = express()
+// Middleware
+
+const publicDirectoryPath = path.join(__dirname, '../public')
+
+app.engine('handlebars', engine());
+app.set('view engine', 'handlebars');
+// app.set('views', './views');
+
+app.use(express.static(publicDirectoryPath))
 
 app.get('/', function (req, res) {
-  res.send('hey Chudier');
+  res.render('home', {
+      title: 'Home',
+      name: 'Chudier'
+  });
 })
 
 app.listen(3000, () => {
